@@ -29,6 +29,10 @@
                 color: orange;
             }
 
+            #middleAttack {
+                color: coral;
+            }
+
             #subAttack1 {
                 color: pink
             }
@@ -48,7 +52,7 @@
         <script type="text/javascript" src="result.js"></script>
     </head>
     <body>
-        <p class="help">매너 및 어인정 모드가 달린 방에서 쓸 수 있는 공격단어, 약공격단어, 체감공격단어, 방어단어를 검색해줍니다. 체감공격단어는 겹칠 수 있으며 체감공격단어는 정확하지 않을 수 있습니다.</p>
+        <p class="help">매너 및 어인정 모드가 달린 방에서 쓸 수 있는 단어들을 검색해줍니다. 체감공격단어는 겹칠 수 있으며 체감공격단어는 정확하지 않을 수 있습니다.</p>
         <input id="start" type="text" maxlength="1" size="1" /><button id="search">검색!</button>
         <p class="help">공격단어:</p>
         <p id="attack" class="result"></p>
@@ -56,6 +60,8 @@
         <p id="weakAttack" class="result"></p>
         <p class="help">방어단어:</p>
         <p id="defense" class="result"></p>
+        <p class="help">어쩌면공격단어:</p>
+        <p id="middleAttack" class="result"></p>
         <p class="help">체감공격단어:</p>
         <p id="feelAttack" class="result"></p>
         <p class="help">제1준공격단어:</p>
