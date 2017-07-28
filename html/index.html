@@ -45,6 +45,10 @@
                 color: green;
             }
 
+            #oneAttack {
+                color: darkred;
+            }
+
             #defense {
                 color: blue;
             }
@@ -52,7 +56,7 @@
         <script type="text/javascript" src="result.js"></script>
     </head>
     <body>
-        <p class="help">매너 및 어인정 모드가 달린 방에서 쓸 수 있는 단어들을 검색해줍니다. 체감공격단어는 겹칠 수 있으며 체감공격단어는 정확하지 않을 수 있습니다.</p>
+        <p class="help">매너 및 어인정 모드가 달린 방에서 쓸 수 있는 단어들을 검색해줍니다. 반사단어는 제외하고 세어서 뽑아내어 더러운 플레이를 방지하였습니다. 체감공격단어는 겹칠 수 있으며 체감공격단어는 정확하지 않을 수 있습니다.</p>
         <input id="start" type="text" maxlength="1" size="1" /><button id="search">검색!</button>
         <p class="help">공격단어:</p>
         <p id="attack" class="result"></p>
@@ -68,5 +72,7 @@
         <p id="subAttack1" class="result"></p>
         <p class="help">제2준공격단어:</p>
         <p id="subAttack2" class="result"></p>
+        <p class="help">한방단어:</p>
+        <p id="oneAttack" class="result"></p>
     </body>
 </html>
