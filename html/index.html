@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>KKUTU HELPER</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body {
+                font-family: "맑은 고딕", sans-serif;
+            }
+
+            input, button {
+                font-family: inherit;
+                font-size: 2em;
+            }
+
+            .help {
+                font-size: 1em;
+            }
+
+            .result {
+                font-size: 2em;
+            }
+
+            #attack {
+                color: red;
+            }
+
+            #subAttack {
+                color: green;
+            }
+
+            #defense {
+                color: blue;
+            }
+        </style>
+        <script type="text/javascript" src="result.js"></script>
+    </head>
+    <body>
+        <p class="help">매너 및 안전 모드가 달린 방에서 쓸 수 있는 공격단어, 준공격단어, 방어단어를 검색해줍니다. 공격단어와 준공격단어는 겹칠 수 있으며 준공격단어는 정확하지 않을 수 있습니다.</p>
+        <input id="start" type="text" maxlength="1" size="1" /><button id="search">검색!</button>
+        <p class="help">공격단어:</p>
+        <p id="attack" class="result"></p>
+        <p class="help">준공격단어:</p>
+        <p id="subAttack" class="result"></p>
+        <p class="help">방어단어:</p>
+        <p id="defense" class="result"></p>
+    </body>
+</html>
